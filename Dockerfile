@@ -1,6 +1,6 @@
 FROM alpine
 
-
+ARG timezone="America/Sao_Paulo"
 RUN apk update  && apk add --no-cache \
 RUN apk update && apk add --no-cache \
 	bash \
@@ -33,3 +33,5 @@ RUN apk update && apk add --no-cache \
 	php8.1-xml \
 	php8.1-zlib \
 	&& rm -rf /var/cache/apk/*
+
+
